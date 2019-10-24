@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-content">
+        <h2>密码登录</h2>
+        <div id="tips" class="hide"><span>!</span>账号或登录密码不正确</div>
+        <div class="form">
+            <input type="text" name="username" id="uname" placeholder="邮箱/会员名/8位ID">
+            <span id="warning-name">用户名至少4位</span>
+            <input type="password" name="password" id="pwd" placeholder="请输入登入密码">
+            <span id="warning-pwd">密码不能为空</span>
+            <button id="btn">登录</button>
+            <div>
+                <a href="#">忘记密码</a>
+                <a href="#">忘记会员名</a>
+                <a href="#">免费注册</a>
+            </div>
+        </div>
+    </div>
+
+     <script src="jquery-3.2.1.js"></script>
+     <script>
+
+
+        $('#uname').blur(function(){
+            if($('#uname').val().length < 4){
+                $('#warning-name').css('display','block');
+            }else{
+                $('#warning-name').css('display','none');
+            }
+        });
+
+        $('#pwd').blur(function(){
+            if($('#pwd').val().length <=  0){
+                $('#warning-pwd').css('display','block');
+            }else{
+                $('#warning-pwd').css('display','none');
+            }
+        });
+
+         $('#btn').click(function(){
+            if($('#uname').val().length < 4){
+                $('#warning-name').css('display','block');
+                return;
+            }else if($('#pwd').val().length <= 0){
+                $('#warning-pwd').css('display','block');
+                return;
+            }
+
+            $.ajax({
+                url:'http://playground.it266.com/login',
+                type:'post',
+                data:{username:$('#uname').val(),password:$('#pwd').val()},
+                datatype:'json',
+                success:function(data){
+                    var res = $.parseJSON(data);
+                    if(res.status){
+                        localStorage.setItem('token',res.data.token);
+                        location.href="./index.html";
+                    }else{
+                        $('#tips').removeClass('hide');
+                    }
+                    
+                },
+                error:function(){
+                    alert('请求失败');
+                }
+            })
+
+         })
+     </script>
+</body>
+</html>

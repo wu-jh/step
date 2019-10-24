@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="images">
+            <div class="img">
+            <div class="slogan">
+                <p class="title">阿里第六代服务器重磅开售</p>
+                <p class="desc">性能全面升级,低成本更优惠</p>
+                <div class="layer-btn">立即抢购<span class="iconfont">&#xe608;</span></div>
+            </div>
+            <img src="img/1.jpg" width="100%">
+        </div>
+
+        <div class="img">
+            <div class="slogan">
+                <p class="title">Web应用托管服务商业化首发</p>
+                <p class="desc">应用托管上云新方式，不收取任何平台费用</p>
+                <div class="layer-btn">查看详情<span class="iconfont">&#xe608;</span></div>
+            </div>
+            <img src="img/2.jpg" width="100%">
+        </div>
+
+        <div class="img">
+            <div class="slogan">
+                <p class="title">全民玩转性能压测</p>
+                <p class="desc">你玩压测，我送VUM和礼品</p>
+                <div class="layer-btn">立即参与<span class="iconfont">&#xe608;</span></div>
+            </div>
+            <img src="img/3.jpg" width="100%">
+        </div>
+
+        <div class="img">
+            <div class="slogan">
+                <p class="title">阿里云快照服务，开启您的数据保护之旅</p>
+                <p class="desc">1.44元起，阿里云快照服务助您ECS数据全年无忧</p>
+                <div class="layer-btn">立即查看<span class="iconfont">&#xe608;</span></div>
+            </div>
+            <img src="img/4.jpg" width="100%">
+        </div>
+
+        <div class="img">
+            <div class="slogan">
+                <p class="title">大数据+AI年度盛会火热报名</p>
+                <p class="desc">门票限时2折！前沿技术、解决方案、最佳实践应有尽有</p>
+                <div class="layer-btn">立即报名<span class="iconfont">&#xe608;</span></div>
+            </div>
+            <img src="img/5.jpg" width="100%">
+        </div>
+        </div>
+
+        <ul class="switch">
+            <li><div class="active"></div></li>
+            <li><div class="active"></div></li>
+            <li><div class="active"></div></li>
+            <li><div class="active"></div></li>
+            <li><div class="active"></div></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="recommend">
+            <div class="item">
+                <p class="title">商标自助注册</p>
+                <p class="desc">极速申报，最快1分钟递交商标局，申请进度透明可查</p>
+                <img src="img/TB1jV1lcF67gK0jSZPfXXahhFXa-128-129.png" width="70">
+            </div>
+
+            <div class="item">
+                <p class="title">企业用户权益专区</p>
+                <p class="desc">企业用户享专属优惠与架构师1对1服务</p>
+                <img src="img/TB1361pcL1H3KVjSZFBXXbSMXXa-128-129.png" width="70">
+            </div>
+
+            <div class="item">
+                <p class="title">主机爆款特惠</p>
+                <p class="desc">个人及中小企业建站及简单应用，限时特惠</p>
+                <img src="img/TB1yMDzbNv1gK0jSZFFXXb0sXXa-128-128.png" width="70">
+            </div>
+        </div>
+
+        <div class="login ">
+            <div class="icon">
+                <img src="img/TB1Sv5PV9zqK1RjSZPcXXbTepXa-80-80.png" width="40">
+            </div>
+            <p class="welcome">Hi! 欢迎来到阿里云</p>
+            <div class="btn-warp">
+                <a href="login.html" class="login-btn">登录</a>
+                <a href="#" class="register-btn">注册</a>
+            </div>
+            <div class="lower-half-link">
+                <a href="#">全民云计算</a><span >|</span><a href="#">免费试用</a>
+            </div>
+        </div>
+
+        <div class="information hide">
+            <div class="personal-data">
+                <div class="icon">
+                    <img id="icon" src="img/header.png" height="100%">
+                </div>
+                <p class="welcome">Hi! <span id="name">name</span></p>
+                <a href="#" class="console">控制台</a>
+                <div class="lower-half-link">
+                    <a href="#">企业权益专区</a><span >|</span><a href="#">备案专区</a>
+                </div>
+            </div>
+            <div class="assets">
+                <ul>
+                    <li>
+                        <a href="#">0</a>
+                        <p>待付款</p>
+                    </li>
+
+                    <li>
+                        <a href="#">0</a>
+                        <p>待续费</p>
+                    </li>
+
+                    <li>
+                        <a id="point" href="#">0</a>
+                        <p>积分</p>
+                    </li>
+
+                    <li>
+                        <a href="#">0</a>
+                        <p>代金券</p>
+                    </li>
+
+                    <li>
+                        <a id="balance" href="#">0</a>
+                        <p>账户余额</p>
+                    </li>
+
+                    <li>
+                        <a href="#"  id="message">0</a>
+                        <p>站内信</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        //将后面四张图片隐藏
+        $(".banner .images .img:gt(0)").css({display:'none'});
+        //显示第一个横条的颜色
+        $('.switch li:eq(0)').children().css('display','block');
+
+        $(".banner .images .img:eq(0)").children().eq(0).animate({top:70,opacity:1},600);
+        //每三秒切换一次
+        var index = 0;
+        var rtime = null;
+        interval();
+
+        //点击横条后,显示颜色,其他的横条颜色消失,并且让相对应的图片显示
+        $('.switch li').click(function(){
+            $(this).children().fadeIn();
+            $(this).siblings().children().fadeOut();
+            $('.banner .images .img').eq($(this).index()).fadeIn(300).siblings().fadeOut(350);
+            $(".banner .images .img").each(function(){
+                $(this).children().eq(0).css({top:100,opacity:0});
+            });
+            $(".banner .images .img").eq($(this).index()).children().eq(0).animate({top:70,opacity:1},600);
+            index = $(this).index();
+            clearInterval(rtime);
+            interval();
+        });
+
+        function interval(){
+            rtime = setInterval(function(){
+                index++;
+                index = index>4?0:index;
+                $('.banner .images .img').eq(index).fadeIn(300).siblings().fadeOut(350);
+                $('.switch li').eq(index).children().fadeIn();
+                $('.switch li').eq(index).siblings().children().fadeOut();
+                $(".banner .images .img").each(function(){
+                    $(this).children().eq(0).css({top:100,opacity:0});
+                });
+                $(".banner .images .img").eq(index).children().eq(0).animate({top:70,opacity:1},600);
+            },3000);
+        }
+
+        $.ajax({
+            url:'http://playground.it266.com/profile',
+            type:'GET',
+            data:{token:localStorage.getItem('token')},
+            datatype:'json',
+            success:function(data){
+                var res = $.parseJSON(data);
+                if(res.status){
+                    $('.information').removeClass('hide');
+                    $('.login').addClass('hide');
+                    $('#name').html(res.data.username);
+                    $('#icon').attr('src',res.data.avatar)
+                    $('#message').html(res.data.message);
+                    $('#point').html(res.data.point);
+                    $('#balance').html(res.data.balance);
+                }
+            },
+
+        })
+    </script>
+</body>
+</html>

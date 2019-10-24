@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,ol,dl {
+    list-style: none;
+}
+
+body{
+    background: #F4F4F4;
+}
+
+.hide{
+    display: none;
+}
+
+.banner{
+    width: 1000px;
+    height: 340px;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+}
+
+.banner .images{
+    width: 1000px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.banner .images .img{
+    position: relative;
+}
+
+.banner .images .img .slogan{
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    opacity: 0;
+}
+
+.banner .images .img .slogan .title{
+    font-size: 28px;
+    color: #373d41;
+}
+
+.banner .images .img .slogan .desc{
+    font-size: 16px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.banner .images .img .slogan .layer-btn{
+    color: #ff6a00;
+    font-size: 16px;
+    margin-top: 70px;
+    font-weight: 600;
+}
+
+.banner .images .img .slogan .layer-btn .iconfont{
+    margin-left: 5px;
+}
+
+.banner .switch{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+.banner .switch li{
+    width: 30px;
+    height: 5px;
+    background: #b5b5b533;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.banner .switch li .active{
+    height: 100%;
+    background: #ff6a00;
+    display: none;
+}
+
+.banner .switch li:hover{
+    background: #ff6a00;
+}
+
+.content{
+    width: 1000px;
+    height: 284px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.content .recommend{
+    width: 680px;
+    height: 244px;
+    padding: 20px 0px;
+    float: left;
+    background: #fff;
+}
+
+.content .recommend .item{
+    width: 178px;
+    height: 196px;
+    padding: 24px;
+    border-left: 1px solid #eee;
+    text-align: center;
+    float: left;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.content .recommend .item .title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .recommend .item .desc{
+    line-height: 25px;
+    margin: 20px 0px 30px;
+    color: #999;
+    font-size: 14px
+}
+
+.content .recommend .item:hover .title{
+    color: #ff6a00;
+}
+
+.content .login{
+    width: 200px;
+    height: 234px;
+    padding: 50px 20px 0px;
+    float: right;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.content .login .welcome{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.content .login .btn-warp{
+    margin-top: 24px;
+}
+
+.content .login .btn-warp .login-btn{
+    width: 90px;
+    height: 35px;
+    display: inline-block;
+    border: 1px solid #ff6a00;
+    line-height: 35px;
+    color: #fff;
+    background: #ff6a00;
+    font-size: 14px;
+    margin-right: 2px;
+}
+
+.content .login .btn-warp .register-btn{
+    width: 90px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    border: 1px solid #ff6a00;
+    color: #ff6a00;
+    background: #fff;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+.content .login .btn-warp .register-btn:hover{
+    background: #ff6a00;
+    color: #fff;
+}
+
+.content .login .lower-half-link{
+    width: 240px;
+    height: 58px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    text-align: center;
+    line-height: 58px;
+    border-top: solid 1px #ddd;
+    font-size: 14px;
+    color: #999;
+}
+
+.content .login .lower-half-link a{
+    color: #ff6a00;
+    margin: 0px 3px;
+}
+
+.content .information{
+    width: 240px;
+    height: 284px;
+    float: right;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.content .information .personal-data{
+    height: 150px;
+}
+
+.content .information .personal-data .icon{
+    margin: 20px auto 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.content .information .personal-data .welcome{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.content .information .personal-data .console{
+    display: inline-block;
+    width: 70px;
+    height: 22px;
+    border: solid 1px #ff6a00;
+    color: #ff6a00;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.content .information .personal-data .console:hover{
+    background: #ff6a00;
+    color: #fff;
+}
+
+.content .information .personal-data .lower-half-link{
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+}
+
+.content .information .personal-data .lower-half-link a{
+    color: #ff6a00;
+    margin: 0px 3px;
+}
+
+.content .information .assets{
+    height: 114px;
+    border-top: solid 1px #ddd;
+}
+
+.content .information .assets ul li{
+    width: 80px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    float: left;
+}
+
+.content .information .assets ul li a{
+    color: #ff6a00;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* 登录页面样式 */
+.login-content{
+    padding: 50px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.login-content h2{
+    margin-bottom: 40px;
+}
+
+.login-content #tips{
+    width: 330px;
+    height: 30px;
+    border: 1px solid  #ff6a00;
+    background: #FEFCEF;
+    font-size: 13px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.login-content #tips span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #FD9354;
+    margin-left: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+}
+
+input{
+    display: block;
+    width: 320px;
+    height: 40px;
+    border: solid 1px #d7d8d9;
+    margin-top: 20px;
+    padding-left: 10px;
+    outline: none;
+}
+
+input:hover{
+    border: solid 1px #ff6a00;
+}
+
+input:focus{
+    border: solid 1px #ff6a00;
+}
+
+#btn{
+    display: block;
+    width: 330px;
+    height: 40px;
+    border: solid 1px #ff6a00;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    outline: none;
+    background: #ff6a00;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+}
+
+.login-content .form a{
+    float: right;
+    font-size: 12px;
+    color: #999;
+    margin-left: 10px;
+}
+
+.form>span{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
