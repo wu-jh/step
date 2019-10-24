@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,ol,dl {
+    list-style: none;
+}
+
+body{
+    background: #F0F2F5;
+}
+
+.nav{
+    height: 80px;
+    background: #011528;
+    color: #B7BDC2;
+}
+
+.nav  ul{
+    margin: 0 10%;
+    display: flex;
+}
+
+.nav ul .logo{
+    float: left;
+    line-height: 80px;
+    background: #344453;
+    width: 200px;
+    text-align: center;
+}
+
+.nav  ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav  ul li{
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    max-width: 80px;
+    line-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 20px;
+}
+
+.nav  ul li:hover{
+    background: #2593FC;
+    color: #fff;
+}
+
+.nav  ul li span{
+    display: none;
+}
+
+.content-warp {
+    margin-left: 0;
+}
+
+.content-warp .content-header{
+    display: none;
+}
+
+.content-warp .position{
+    margin: 25px 10%;
+}
+
+.content-warp .content{
+    min-height: 350px;
+    margin: 0 10%;
+    padding: 20px;
+    background: #fff;
+}
+
+.content-warp .footer{
+    margin: 25px 10%;
+    text-align: center;
+}
+
+#display{
+    display: block;
+}
+
+#margin{
+    margin-left: 0px;
+}
+
+
+/*小屏幕*/
+@media screen and (max-width: 900px) {
+    
+    .nav{
+        width: 240px;
+        min-height: 600px;
+        background: #011528;
+        float: left; 
+        color: #B7BDC2;
+        display: none;
+    }
+
+    .nav ul{
+        margin: 0;
+        display: block;
+    }
+
+    .nav ul .logo{
+        height:38px;
+        background: #344453;
+        margin: 20px;
+    }
+
+    .nav ul li{
+        height: 50px;
+        padding: 0 20px;
+        line-height: 45px;
+        margin: 10px 0;
+        cursor: pointer;
+        clear: both;
+        width: 100%;
+        max-width: 200px;
+        text-align: left;
+    }
+
+    .nav  ul li span{
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .nav li:hover{
+        background: #2593FC;
+        color: #fff;
+    }
+
+    .content-warp .position{
+        display: none;
+    }
+
+    .content-warp .content-header{
+        height: 100px;
+        background: #fff;
+        display: block;
+        overflow: hidden;
+    }
+
+    .content-warp .content-header .shrink{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        margin-top: 35px;
+        line-height: 30px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    .content-warp .content{
+        min-height: 350px;
+        margin: 20px;
+        padding: 20px;
+        background: #fff;
+    }
+
+    .content-warp .footer{
+        text-align: center;
+        margin: 20px;
+    }
+
+    #display{
+        display: none;
+    }
+
+    #show{
+        display: block;
+    }
+
+    #margin{
+        margin-left: 240px;
+    }
+
+    #margin-left{
+        margin-left: 0;
+    }
+}

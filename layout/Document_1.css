@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,ol,dl {
+    list-style: none;
+}
+
+.nav{
+    background: #3395D2;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav li{
+    flex: 1;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 10px;
+    max-width: 105px;
+}
+
+.nav li:hover{
+    background: #7DB3DF;
+}
+
+.nav li div:first-child{
+    margin-bottom: 5px;
+}

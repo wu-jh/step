@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="Document_2.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <div class="logo"></div>
+            <li><span class="iconfont">&#xe686;</span>nav 1</li>
+            <li><span class="iconfont">&#xe62a;</span>nav 2</li>
+            <li><span class="iconfont">&#xe64c;</span>nav 3</li>
+        </ul>
+    </nav>
+    <div class="content-warp">
+        <div class="content-header">
+            <div class="iconfont shrink">&#xe653;</div>
+        </div>
+
+        <div class="position">
+            Home / List / App
+        </div>
+
+        <div class="content">
+            content
+        </div>
+
+        <footer class="footer">
+            Disgin ©2019 Created by XXX
+        </footer>
+    </div>
+    
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        var nav = $('.nav');
+        var content = $('.content-warp');
+        var shrink = $('.shrink');
+        var tmp = false;
+
+        shrink.click(function(){
+            if(tmp){
+                $(this).html('&#xe653;');
+                nav.attr('id','disaplay');
+                content.attr('id','margin-left');
+                tmp = false;
+            }else{
+                $(this).html('&#xe66e;');
+                nav.attr('id','show');
+                content.attr('id','margin');
+                tmp = true;
+            }
+            
+        });
+
+    </script>
+</body>
+</html>
